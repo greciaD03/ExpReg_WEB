@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>🍣</title>
+</head>
+<body>
+    <img src="css/img/kato.jpg" alt="Gato lindo💕" width="250" height="200" align="right"/>
+    <h1>|Moshi|Moshi|</h1>
+    <p><strong>| おはよう！ 🍜 |</strong></p>
+
+    <form class="flex-column flex-md-row" action="#" name="registro" id="registro" method="POST" enctype="multipart/form-data" autocomplete="off" onsubmit="return validar();">
+ 
+        <div class="form-group row">
+            <label for="nombre" class="col-sm-2 col-form-label"><strong>Nombre</strong></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" >
+                        <span id="Name_error"></span>
+                </div>
+        </div>
+     
+     
+        <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label"><strong>Email</strong></label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Email" >
+                     <span id="Mail_error"></span>
+                    </div>
+        </div>
+     
+     
+        <div class="form-group row">
+             <label for="password" class="col-sm-2 col-form-label"><strong>Password</strong></label>
+                 <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd1" placeholder="Password" >
+                        <span id="Clave1_error"></span>
+                 </div>
+        </div>
+     
+        <div class="form-group row">
+            <label for="password" class="col-sm-2 col-form-label"><strong>Confirma Password</strong></label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd2" placeholder="Confirma Password" >
+                    <small id="passwordHelpInline" class="text-muted"> 8-16 caracteres, al menos un número, al menos una minúscula, al menos una mayúscula.</small><br>
+                       <span id="Clave2_error"></span>
+                </div>
+        </div>
+     
+     
+        <div class="custom-control custom-checkbox my-4 ">
+                   <input class="custom-control-input" type="checkbox" id="gridCheck" name="acepto" value="yes" >
+                       <span id="Check_error" ></span>
+                    <label class="custom-control-label" for="gridCheck"><strong>Acepto</strong><a href="apa/web.html"> las condiciones de uso y privacidad</a><br><small>Debe aceptar antes de registrarse.</small></label>
+            </div>
+
+        <div class="form-group my-3"></div>
+        <a href="http:/apa/web.html">
+            <button type="submit" class="btn btn-outline-primary" id="btn"><strong>Registrarse</strong></button>
+        </a>
+        </div>
+
+    </form>
+
+</body>
+</html>
